@@ -1,5 +1,6 @@
 body {
     padding-top: 50px;
+    background-color: #999966;
 }
 .starter-template {
     padding: 40px 15px;
@@ -7,6 +8,16 @@ body {
 }
 
 #levi {
+    text-align: center; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
+}
+
+#levi2 {
+    text-align: center; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
+}
+
+#levi3 {
     text-align: center; /* center checkbox horizontally */
     vertical-align: middle; /* center checkbox vertically */
 }

@@ -928,6 +928,7 @@ figure {
 }
 img {
   vertical-align: middle;
+  opacity: 0.4;
 }
 .img-responsive,
 .thumbnail > img,
@@ -958,6 +959,10 @@ img {
 }
 .img-circle {
   border-radius: 50%;
+}
+
+img:hover {
+    opacity: 1.0;
 }
 hr {
   margin-top: 20px;

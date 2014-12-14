@@ -9,10 +9,179 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Starter Template for Bootstrap</title>
+<!-- Ebola Style Gedeelte -->
+    <style type="text/css">
+        #map {
+            margin:0;
+            padding:0;
+            width:232px;
+            height:464px;
+            background:url("images/resized_body2.jpg") top left no-repeat ;
+            font-family:arial, helvetica, sans-serif;
+            font-size:8pt;
+        }
+
+        #map li {
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+
+        #map li a {
+            position:absolute;
+            display:block;
+            /*
+               Specifying a background image
+               (a 1px by 1px transparent gif)
+               fixes a bug in older versions of
+               IE that causeses the block to not
+               render at its full dimensions.
+            */
+            background:url(blank.gif);
+            text-decoration:none;
+            color:#000;
+        }
+
+        #map li a span { display:none; }
+
+        #map li a:hover span {
+            position:relative;
+            display:block;
+            width:200px;
+            left:20px;
+            top:20px;
+            border:1px solid #000;
+            background:#fff;
+            padding:5px;
+            filter:alpha(opacity=80);
+            opacity:0.8;
+        }
+
+        #map a.head {
+            top:170px;
+            left:270px;
+            width:80px;
+            height:60px;
+        }
+
+        #map a.neck {
+            top:230px;
+            left:282px;
+            width:50px;
+            height:20px;
+        }
+
+        #map a.body {
+            top:250px;
+            left:272px;
+            width:65px;
+            height:80px;
+        }
+
+        #map a.stommach {
+            top:330px;
+            left:275px;
+            width:65px;
+            height:80px;
+        }
+
+        #map a.skin {
+            top:330px;
+            left:360px;
+            width:70px;
+            height:120px;
+        }
+    </style>
+
+<!-- Spanish Flu Gedeelte -->
+    <style type="text/css">
+        #map2 {
+            margin:0;
+            padding:0;
+            width:232px;
+            height:464px;
+            background:url("images/resized_body2.jpg") top left no-repeat ;
+            font-family:arial, helvetica, sans-serif;
+            font-size:8pt;
+        }
+
+        #map2 li {
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+
+        #map2 li a {
+            position:absolute;
+            display:block;
+            /*
+               Specifying a background image
+               (a 1px by 1px transparent gif)
+               fixes a bug in older versions of
+               IE that causeses the block to not
+               render at its full dimensions.
+            */
+            background:url(blank.gif);
+            text-decoration:none;
+            color:#000;
+        }
+
+        #map2 li a span { display:none; }
+
+        #map2 li a:hover span {
+            position:relative;
+            display:block;
+            width:200px;
+            left:20px;
+            top:20px;
+            border:1px solid #000;
+            background:#fff;
+            padding:5px;
+            filter:alpha(opacity=80);
+            opacity:0.8;
+        }
+
+        #map2 a.head2 {
+            top:170px;
+            left:1235px;
+            width:80px;
+            height:60px;
+        }
+
+        #map2 a.neck2 {
+            top:230px;
+            left:1250px;
+            width:50px;
+            height:20px;
+        }
+
+        #map2 a.body2 {
+            top:250px;
+            left:1245px;
+            width:65px;
+            height:80px;
+        }
+
+        #map2 a.stommach2 {
+            top:330px;
+            left:1245px;
+            width:65px;
+            height:80px;
+        }
+
+        #map2 a.skin2 {
+            top:330px;
+            left:1330px;
+            width:70px;
+            height:120px;
+        }
+    </style>
 </head>
 
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
+
+
 
 <body>
 
@@ -39,7 +208,162 @@
     </div>
 </nav>
 
-    <br />Click Here To RSVP!</div>
+<table style="margin:10px auto; width:1200px" id="levi">
+    <tr>
+        <th></th>
+        <th style="height: 100px"></th>
+        <th></th>
+    </tr>
+</table>
+<table style="margin:10px auto; width:1200px" id="levi2">
+    <tr>
+        <td style="width: 232px">
+            <ul id="map">
+                <li><a class="head" href="#" title="Head"><span><b>Hoofd</b><br>
+                    <ol>
+                        <li>Hoofdpijn</li>
+                        <li>Koorts</li>
+                        <li>Rode/Gele Ogen</li>
+                    </ol>
+		</span></a></li>
+
+                <li><a class="neck" href="#" title="Neck"><span><b>Nek/Keel</b><br>
+                    <ol>
+                        <li>Keelpijn</li>
+                        <li>De Hik</li>
+                        <li>Ademhalingsproblemen</li>
+                        <li>Slikproblemen</li>
+                    </ol>
+                </span></a></li>
+
+                <li><a class="body" href="#" title="Body"><span><b>Borstkas</b><br>
+                    <ol>
+                        <li>Borstpijn</li>
+                    </ol>
+		</span></a></li>
+
+                <li><a class="stommach" href="#" title="Stommach"><span><b>Buik</b><br>
+		            <ol>
+                        <li>Buikpijn</li>
+                        <li>Braken</li>
+                    </ol>
+		</span></a></li>
+
+                <li><a class="skin" href="#" title="Skin"><span><b>Huid/Spieren</b><br>
+                    <ol>
+                        <li>Spierpijn</li>
+                        <li>Spierzwakte</li>
+                        <li>Huiduitslag</li>
+                        <li>Bloedingen uit Lichaamsholtes</li>
+                    </ol>
+		</span></a></li>
+            </ul>
+        </td>
+        <td style="width: 368px">
+            <h1>Ebola</h1>
+            <ul>
+                <b>Stadium één:</b>
+                <br>
+                <li>Hoge koorts van ten minste 38,5 graden Celsius</li>
+                <li>Pijn</li>
+                <li>Ernstige hoofdpijn</li>
+                <li>Misselijkheid</li>
+                <li>Keelpijn</li>
+                <li>Bloeden zowel intern als extern</li>
+                <li>Duizeligheid</li>
+                <li>Zwakte en vermoeidheid</li>
+            </ul>
+            <br>
+            <ul>
+                <b>Stadium twee:</b>
+                <br>
+                <li>Bloederige of donkere ontlasting</li>
+                <li>Diarree</li>
+                <li>Braken bloed</li>
+                <li>Rode ogen</li>
+                <li>Shock in de vorm van hypovolemie</li>
+                <li>Lage bloeddruk</li>
+                <li>Ernstige interne en externe bloedingen beïnvloeden de bloedplaatjes à hierdoor ontstaat een chemische stof die gaten creëert ter grootte van een cel in het capillaire</li>
+            </ul>
+        </td>
+        <td style="width: 368px">
+            <h1>Spanish Flu</h1>
+            <ul>
+                <b>Stadium één:</b>
+                <li>Hoge koorts</li>
+                <li>Hoesten</li>
+                <li>Rillingen</li>
+                <li>Spierpijn</li>
+                <li>Keelpijn</li>
+            </ul>
+            <br>
+            <ul>
+                <b>Stadium twee:</b>
+                <li>Extreme moeheid</li>
+                <li>Flauwvallen en flauwtes</li>
+                <li>Energieverlies</li>
+                <li>Lusteloosheid, geen trek in eten en drinken</li>
+                <li>Verzwakte ademhaling</li>
+                <li>Onbehandelbare longontsteking</li>
+            </ul>
+            <br>
+            <ul>
+                <b>Stadium drie:</b>
+                <li>Ongeneesbare longontsteking</li>
+                <li>Verdrinking door bloed in de longen</li>
+                <li>Te weinig zuurstofopname</li>
+            </ul>
+        </td>
+        <td style="width: 232px">
+            <ul id="map2">
+                <li><a class="head2" href="#" title="Head"><span><b>Hoofd</b><br>
+                    <ol>
+                        <li>Hoge Koorts</li>
+                        <li>Donkere Vlekken op de Wangen</li>
+                        <li>Misselijkheid</li>
+                    </ol>
+		</span></a></li>
+
+                <li><a class="neck2" href="#" title="Neck"><span><b>Nek/Keel</b><br>
+                    <ol>
+                        <li>Keelpijn</li>
+                        <li>Hoesten</li>
+                        <li>Verzwakte Ademhaling / Te weinig Zuurstofopname</li>
+                    </ol>
+                </span></a></li>
+
+                <li><a class="body2" href="#" title="Body"><span><b>Borstkas</b><br>
+                    <ol>
+                        <li>Onbehandelbare Longontsteking</li>
+                        <li>Bloed in de Longen</li>
+                        <li>Verstikking door te weinig zuurstofopname</li>
+                    </ol>
+		</span></a></li>
+
+                <li><a class="stommach2" href="#" title="Stommach"><span><b>Buik</b><br>
+		            <ol>
+                        <li>Lusteloosheid</li>
+                        <li>Diarree</li>
+                    </ol>
+		</span></a></li>
+
+                <li><a class="skin2" href="#" title="Skin"><span><b>Huid/Spieren</b><br>
+                    <ol>
+                        <li>Spierpijn</li>
+                        <li>Rillingen</li>
+                    </ol>
+		</span></a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<table style="margin:10px auto; width:1200px" id="levi3">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
